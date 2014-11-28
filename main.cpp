@@ -8,6 +8,8 @@ namespace{
 
 		void initialize(){
 				// TODO :: objects allocation.
+				
+		
 		}
 
 		void start_display(){

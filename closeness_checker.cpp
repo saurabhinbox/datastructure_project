@@ -42,6 +42,14 @@ namespace{
 				return score;
 		}
 
+		vector<double> manhatan_scoring(vector<int>& target, vector< vector<int> >& feature_vector){
+				vector<double> score;
+				
+				// TODO :: 
+
+				return score;
+		}
+
 }//namespace
 
 //sum bigger, priority smaller.
@@ -51,16 +59,13 @@ vector<double> evaluation(vector<int> target, vector< vector<int> > feature_vect
 		vector<double> euclidian_score = euclidian_scoring(target, feature_vector);
 
 		//sum scoring.
-		int count = 0;
-		for (auto y : feature_vector){
+		int target_size = target.size();
+		for (int count = 0; count < target_size; count++){
 				double sum = 0;
-				for (auto x : y){
-						sum += x;
-				}
+				
 				sum += cosine_score.at(count);
 				sum += euclidian_score.at(count);
 				total_score.push_back(sum);
-				++count;
 		}
 
 		return total_score;
