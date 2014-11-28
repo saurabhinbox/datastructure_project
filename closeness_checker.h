@@ -3,6 +3,6 @@
 
 #include <vector>
 
-std::vector<int> evaluation(std::vector<int> target, std::vector< vector<int> > feature_vector);
+std::vector<double> evaluation(std::vector<int> target, std::vector< vector<int> > feature_vector);
 
 #endif
