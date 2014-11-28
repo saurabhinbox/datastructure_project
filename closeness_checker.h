@@ -1,8 +1,8 @@
 #ifndef INCLUDED_CLOSENESS_CHECKER_H
 #define INCLUDED_CLOSENESS_CHECKER_H
 
-class Feature;
+#include <vector>
 
-int evaluation(Feature* features);
+std::vector<int> evaluation(std::vector<int> target, std::vector< vector<int> > feature_vector);
 
 #endif
